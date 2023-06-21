@@ -18,8 +18,7 @@ dependencies {
 
 --#region oxmysql
 
--- dependency 'oxmysql'
--- server_script '@oxmysql/lib/MySQL.lua'
+dependency 'oxmysql'
 
 --#endregion oxmysql
 
@@ -30,6 +29,7 @@ shared_scripts {
 }
 
 server_scripts {
+	'@oxmysql/lib/MySQL.lua',
     'printer.lua',
     'server/Server.lua',
     'server/Updates.lua',
